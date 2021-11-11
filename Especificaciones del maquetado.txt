@@ -14,5 +14,23 @@ barra lateral de noticias
 backround color rgb 65 85 63
 elementos:(noticias)
 tipo de letra "Standard" 23 alineado a la derecha.
+bordes redondeados a 25
+de 160 x 100
+fondo rgb 100 68 0
 
+barra lateral de publicidades
+backround color rgb 65 85 63
+Elementos publicidades:
+tipo de letra "Verdana" 20 alineado al centro
+170 x 110
+fondo rgb 38 84 83
 
+cuerpo principal
+fondo blanco 
+Noticias en el cuerpo principal
+Sans-serif-italic 20 negro
+
+pie de pagina
+fondo rgb 25 47 22
+50 de alto
+fuente Verdana 20 blanco
