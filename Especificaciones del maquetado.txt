@@ -1,0 +1,18 @@
+Para mayor a 900 (maqueta en 1000px)
+La fuente del titulo de la pagina es MS Sans Serif 75 blanco, bold
+el fondo del encabezado es RGB 25,47,22
+tiene 150px de alto
+
+La barra de navegacion por categorias tiene 
+60px de alto
+RGB 35,68,31
+Fuente de las categorias:
+Verdana Italic 24 bold white
+Fondo botones en RGB 28,28,59
+
+barra lateral de noticias
+backround color rgb 65 85 63
+elementos:(noticias)
+tipo de letra "Standard" 23 alineado a la derecha.
+
+
