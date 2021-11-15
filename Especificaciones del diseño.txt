@@ -34,3 +34,24 @@ pie de pagina
 fondo rgb 25 47 22
 50 de alto
 fuente Verdana 20 blanco
+
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Para menor a 900 (maqueta en 500px)
+La fuente del titulo de la pagina es MS Sans Serif 38 blanco, bold
+el fondo del encabezado es RGB 25,47,22
+tiene 113px de alto
+
+La barra de navegacion por categorias tiene 
+307px de alto
+RGB 35,68,31
+Fuente de las categorias:
+Verdana Italic 24 bold white
+Fondo botones en RGB 28,28,59
+
+barra de ultimas noticias
+backround color rgb 65 85 63
+elementos:(noticias)
+tipo de letra "Standard" 23 alineado a la derecha.
+70px x 44px
