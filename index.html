@@ -6,24 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <header id="encabezado">
-        <p>Este es el encabezado</p>
+<body class=contenedor_general>
+    <header class="encabezado">
+        <div class=logo>
+            <img src="/images/Logo.jpg" alt="Logo de la pagina">
+        </div>
+        <div class="titulo">
+            <h1>Breaking news</h1>
+        </div>
+        <div class=redes_sociales>
+            <img src="/images/instagram.png" alt="icono  instagram">
+            <img src="/images/linkedin.png" alt="icono linkedin">
+            <img src="/images/twitter.png" alt="icono twitter">
+            <img src="/images/Youtube.png" alt="icono youtube">
+            <img src="/images/facebook.png" alt="icono facebook">
+        </div>        
     </header>
     <main>
-        <div id="navegacion">
+        <div class="menu_nav">
+            <li>
+                <ul><button class=boton_nav>Ultima noticia</button></ul>
+                <ul><button class=boton_nav>Política</button></ul>
+                <ul><button class=boton_nav>Deportes</button></ul>
+                <ul><button class=boton_nav>Espectáculos</button></ul>
+                <ul><button class=boton_nav>Economia</button></ul>
+                <ul><button class=boton_nav>Mundo</button></ul>
+                <ul><button class=boton_nav><img src="/images/buscar.png" alt="buscar"></button></ul>
+            </li>
+        </div>
+
+        <div class="panel_ultimas_not">
+            <div class="ult_noticias">
+                <div class="utl_titular">
+                    <h2>Lorem.</h2>
+                </div>
+                <div class="ult_img">
+                    <img src="" alt="">
+                </div>
+                <div class="ult_texto">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel_principal">
 
         </div>
 
-        <div id="barra_mas_leidos">
-
-        </div>
-
-        <div id="cuerpo_central">
-
-        </div>
-
-        <div id = "barra_publicidad">
+        <div class = "panel_publicidades">
 
         </div>
     </main>
