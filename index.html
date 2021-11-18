@@ -4,61 +4,205 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="CSS/estilos.css" rel="stylesheet">
+    <title>BB Breaking News</title>
 </head>
-<body class=contenedor_general>
-    <header class="encabezado">
-        <div class=logo>
-            <img src="/images/Logo.jpg" alt="Logo de la pagina">
-        </div>
-        <div class="titulo">
-            <h1>Breaking news</h1>
-        </div>
-        <div class=redes_sociales>
-            <img src="/images/instagram.png" alt="icono  instagram">
-            <img src="/images/linkedin.png" alt="icono linkedin">
-            <img src="/images/twitter.png" alt="icono twitter">
-            <img src="/images/Youtube.png" alt="icono youtube">
-            <img src="/images/facebook.png" alt="icono facebook">
-        </div>        
-    </header>
-    <main>
-        <div class="menu_nav">
-            <li>
-                <ul><button class=boton_nav>Ultima noticia</button></ul>
-                <ul><button class=boton_nav>Política</button></ul>
-                <ul><button class=boton_nav>Deportes</button></ul>
-                <ul><button class=boton_nav>Espectáculos</button></ul>
-                <ul><button class=boton_nav>Economia</button></ul>
-                <ul><button class=boton_nav>Mundo</button></ul>
-                <ul><button class=boton_nav><img src="/images/buscar.png" alt="buscar"></button></ul>
-            </li>
-        </div>
-
-        <div class="panel_ultimas_not">
-            <div class="ult_noticias">
-                <div class="utl_titular">
-                    <h2>Lorem.</h2>
+<body>
+    <div class=contenedor_general>
+        <header class="encabezado">
+            <div class="logo_encabezado">
+               <img src="images/Logo.jpg" alt="Logo de la pagina">
+            </div>
+            <div class="titulo_encabezado">
+                <div class="nombre">
+                    <h1>Breaking News</h1>
+                 </div>
+                 <div class=redes_sociales>
+                     <img src="images/instagram.png" alt="icono instagram">
+                     <img src="images/linkedin.png" alt="icono linkedin">
+                     <img src="images/twitter.png" alt="icono twitter">
+                     <img src="images/Youtube.png" alt="icono youtube">
+                     <img src="images/facebook.png" alt="icono facebook">
+                 </div> 
+            </div>
+        </header>
+        <main class="contenedor_central">
+            <div class="navegador">
+               <ul class="nav_menu">
+                  <li><button class=boton_nav>Último momento</button></li>
+                  <li><button class=boton_nav>Política</button></li>
+                  <li><button class=boton_nav>Deportes</button></li>
+                  <li><button class=boton_nav>Espectáculos</button></li>
+                  <li><button class=boton_nav>Economía</button></li>
+                  <li><button class=boton_nav>Mundo</button></li>
+                  <li><button class=boton_nav><img src="images/buscar.png" alt="buscar"></button></li>
+               </ul>
+            </div>
+            <div class="informador">
+                <div class="panel_ultima_noticias">
+                    <div class="ult_noticia">
+                        <div class="ult_titular">
+                           <h3>Titular Noticia 1</h3>
+                        </div>
+                        <div class="contenido_ult_noticia">
+                            <div class="ult_img">
+                                <img src="images/img_ult_noticia.jpg" alt="imagen de noticia 1">
+                             </div>
+                             <div class="ult_texto">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="ult_noticia">
+                        <div class="ult_titular">
+                           <h3>Titular Noticia 2</h3>
+                        </div>
+                        <div class="contenido_ult_noticia">
+                            <div class="ult_img">
+                                <img src="images/img_ult_noticia.jpg" alt="imagen de noticia 2">
+                             </div>
+                             <div class="ult_texto">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="ult_noticia">
+                        <div class="ult_titular">
+                           <h3>Titular Noticia 3</h3>
+                        </div>
+                        <div class="contenido_ult_noticia">
+                            <div class="ult_img">
+                                <img src="images/img_ult_noticia.jpg" alt="imagen de noticia 3">
+                             </div>
+                             <div class="ult_texto">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                             </div>
+                        </div>
+                    </div>    
                 </div>
-                <div class="ult_img">
-                    <img src="" alt="">
+                <div class="panel_principal">
+                    <div class="destac_noticia">
+                        <div class="destac_titular">
+                            <h3>Destacado 1</h3>
+                        </div>
+                        <div class="contenido_destacado">
+                            <div class="destac_img">
+                                <img src="images/img_destacada.jpg" alt="imagen noticia destacada 1">
+                            </div>
+                            <div class="destac_texto">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div class="destac_boton">
+                            <p> + info</p>
+                        </div>
+                    </div>
+                    <div class="destac_noticia">
+                        <div class="destac_titular">
+                            <h3>Destacado 2</h3>
+                        </div>
+                        <div class="contenido_destacado">
+                            <div class="destac_img">
+                                <img src="images/img_destacada.jpg" alt="imagen noticia destacada 2">
+                            </div>
+                            <div class="destac_texto">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div class="destac_boton">
+                            <p> + info</p>
+                        </div>
+                    </div>
+                    <div class="destac_noticia">
+                        <div class="destac_titular">
+                            <h3>Destacado 3</h3>
+                        </div>
+                        <div class="contenido_destacado">
+                            <div class="destac_img">
+                                <img src="images/img_destacada.jpg" alt="imagen noticia destacada 3">
+                            </div>
+                            <div class="destac_texto">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div class="destac_boton">
+                            <p> + info</p>
+                        </div>
+                    </div>
+                    <div class="destac_noticia">
+                        <div class="destac_titular">
+                            <h3>Destacado 4</h3>
+                        </div>
+                        <div class="contenido_destacado">
+                            <div class="destac_img">
+                                <img src="images/img_destacada.jpg" alt="imagen noticia destacada 4">
+                            </div>
+                            <div class="destac_texto">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div class="destac_boton">
+                            <p> + info </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="ult_texto">
-                    <p>Lorem ipsum dolor sit amet.</p>
+                <div class = "panel_publicidades">
+                    <div class="publicidad">
+                        <div class="pub_titular">
+                          <h3>Publicidad 1</h2>
+                        </div>
+                        <div class="contenido_publicidad">
+                            <div class="pub_img">
+                                <img src="images/img_publicaciones.jpg" alt="imagen publicidad 1">
+                             </div>
+                             <div class="pub_texto">
+                                 <p>Lorem ipsum dolor sit amet.</p>
+                             </div>
+                        </div>
+                        <div class="pub_boton">
+                            <p> + info</p>
+                        </div>
+                    </div>
+                    <div class="publicidad">
+                        <div class="pub_titular">
+                          <h3>Publicidad 1</h2>
+                        </div>
+                        <div class="contenido_publicidad">
+                            <div class="pub_img">
+                                <img src="images/img_publicaciones.jpg" alt="imagen publicidad 2">
+                             </div>
+                             <div class="pub_texto">
+                                 <p>Lorem ipsum dolor sit amet.</p>
+                             </div>
+                        </div>
+                        <div class="pub_boton">
+                            <p> + info</p>
+                        </div>
+                    </div>
+                    <div class="publicidad">
+                        <div class="pub_titular">
+                          <h3>Publicidad 1</h2>
+                        </div>
+                        <div class="contenido_publicidad">
+                            <div class="pub_img">
+                                <img src="images/img_publicaciones.jpg" alt="imagen publicidad 3">
+                             </div>
+                             <div class="pub_texto">
+                                 <p>Lorem ipsum dolor sit amet.</p>
+                             </div>
+                        </div>
+                        <div class="pub_boton">
+                            <p> + info</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="panel_principal">
-
-        </div>
-
-        <div class = "panel_publicidades">
-
-        </div>
-    </main>
-    <footer id = "pie_de_pagina">
-
-    </footer>
+        </main>
+        <footer class= "pie_de_pagina">
+           <div class = "info_desarrolladores">
+               <h4> WS Web Pages-2021 </h4>
+           </div>
+        </footer>
+    </div>
 </body>
 </html>

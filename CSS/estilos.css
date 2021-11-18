@@ -1,0 +1,205 @@
+/* Ajustes Generales */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+/*Ajustes Contenedor General del Body*/
+
+.contenedor_general {
+    width: 80%;
+    margin:0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/*1. Ajustes del Header*/
+.encabezado {
+    background-color: rgb(25,47,22);
+    height: 150px;
+    display: flex;      
+}
+
+/*1.1 Contenido del Header*/
+
+.logo_encabezado {
+    padding-left: 10px;
+}
+.titulo_encabezado {
+    padding-left: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.nombre {
+    font-family: sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(255,255,255);   
+}
+.redes_sociales {
+
+}
+
+/*2. Ajustes del Main*/
+.contenedor_central {
+    background-color: rgb(255,255,255);
+    
+
+}
+
+/*2.1 Ajustes barra de navegación dentro de Main*/
+.navegador {
+
+    background-color: rgb(35,68,31);
+    height: 60px;
+}
+
+.nav_menu {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.boton_nav {
+    background-color: rgb(28,28,59);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    color: rgb(255,255,255);
+}
+
+/*2.2 Ajustes de la Seccion Informativa dentro de Main*/
+.informador {
+    display: flex;
+}
+
+/*2.2.1 Ajustes Panel de Noticias (a la izquierda) dentro de Main*/
+.panel_ultima_noticias {
+    background-color: rgb(65, 85, 63);
+    width: 20%;
+
+}
+.ult_noticia {
+    background-color: rgb(204, 153, 0);
+    border-radius: 15px;
+    box-sizing: border-box;
+    width: 185px;
+}
+.ult_titular {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255,255,255);
+    text-decoration: underline;
+    text-align: center;
+}
+.contenido_ult_noticia {
+    display: flex;
+}
+.ult_img {
+
+}
+.ult_texto {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+
+}
+/*2.2.2 Ajustes Panel Principal de Noticias (centrada) dentro de Main*/
+.panel_principal {
+    background-color: rgb(255,255,255);
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.destac_noticia {
+    background-color: rgb(107, 67, 37);
+    width: 280px;
+    height: 280px;
+    background: linear-gradient(30deg,rgb(107, 67, 37)90%, transparent 10%,rgb(107, 67, 37)90%, transparent 10%);
+
+}
+.destac_titular {
+    font-weight: bold;
+    color: rgb(255,255,255);
+    text-align: center;
+
+}
+.contenido_destacado {
+    display: flex;
+}
+.destac_img {
+
+}
+.destac_texto {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+.destac_boton {
+    background-color: rgb(0, 255, 255);
+    border-radius: 3px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+/*2.2.3 Ajustes Panel de Publicidad (a la derecha) dentro de Main*/
+.panel_publicidades {
+    background-color: rgb(65, 85, 63);
+    width: 20%;
+}
+.publicidad {
+    background-color: rgb(0, 130, 37);
+    width: 185px;
+    height: 185px;
+    background: linear-gradient(30deg,rgb(0, 130, 37)90%, transparent 10%,rgb(0, 130, 37)90%, transparent 10%);
+
+}
+.pub_titular {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+
+}
+.contenido_publicidad {
+    display: flex;
+}
+.pub_img {
+
+}
+.pub_texto {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+
+}
+.pub_boton {
+    background-color: rgb(0, 0, 255);
+    border-radius: 3px;
+    color: rgb(255,255,255);
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+/*3. Ajustes del Footer*/
+.pie_de_pagina {
+    background-color: rgb(25,47,22);
+    height: 50px;
+}
+.info_desarrolladores{
+    justify-content: center;
+    color: rgb(255,255,255);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+}
