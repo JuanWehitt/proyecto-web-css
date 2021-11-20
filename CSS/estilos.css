@@ -5,250 +5,530 @@
     list-style: none;
     box-sizing: border-box;
 }
-/*Ajustes Contenedor General del Body*/
 
-.contenedor_general {
-    width: 80%;
-    margin:0 auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
+@media  screen and (max-width:900px){
+    
+    /*Ajustes Contenedor General del Body*/
+
+    .contenedor_general {
+        width: 80%;
+        margin:0 auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*1. Ajustes del Header*/
+    .encabezado {
+        background-color: rgb(65,119,57);
+        
+        display: flex;      
+    }
+
+    /*1.1 Contenido del Header*/
+
+    .logo_encabezado {
+        padding-left: 10px;
+    }
+    .titulo_encabezado {
+        padding-left: 15px;
+        padding-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .nombre {
+        font-family: sans-serif;
+        font-size: 23px;
+        font-weight: bold;
+        color: rgb(255,255,255);   
+    }
+    .redes_sociales {
+
+    }
+    .img_redes {
+
+    }
+
+    /*2. Ajustes del Main*/
+    .contenedor_central {
+        background-color: rgb(255,255,255);
+        display: flex;
+    }
+
+    /*2.1 Ajustes barra de navegación dentro de Main*/
+    .navegador {
+
+        background-color: rgb(91,175,80);
+        height: 210px;
+        width: 152px;
+    }
+
+    .nav_menu {
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 10px;
+        flex-direction: column;
+        align-content: flex-start;
+    }
+
+    .boton_nav {
+        background-color: rgb(71,72,152);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        border: none;
+        color: rgb(255,255,255);
+    }
+    .lupa {
+        background-color: rgb(91,175,80);
+        border-radius: 5px;
+    }
+
+    /*2.2 Ajustes de la Seccion Informativa dentro de Main*/
+    .informador {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    /*2.2.1 Ajustes Panel de Noticias (a la izquierda) dentro de Main*/
+    .panel_ultima_noticias {
+        background-color: rgb(65, 85, 63);
+        width: 100%;
+        height: 95px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .ult_noticia {
+        background-color: rgb(204, 153, 0);
+        border-radius: 15px;
+        box-sizing: border-box;
+        width: 120px;
+        height: 85px;
+    }
+    .ult_titular {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 10px;
+        color: rgb(255,255,255);
+        text-decoration: underline;
+        text-align: center;
+    }
+    .contenido_ult_noticia {
+        display: flex;
+    }
+    .ult_img > img{
+        width:60px;
+        padding: 4px;
+        border-radius: 16px;
+    }
+    .ult_img {
+        
+
+    }
+    .ult_texto {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 9px;
+        width: 60px;
+        padding-right: 2px;
+
+
+    }
+    /*2.2.2 Ajustes Panel Principal de Noticias (centrada) dentro de Main*/
+    .panel_principal {
+        
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        order: 1;
+        margin-right: 190px
+    }
+    .destac_noticia {
+        background-color: rgb(95,101,175);
+        width: 270px;
+        height: 180px;
+        background: linear-gradient(30deg, transparent 10%,rgb(95,101,175)10%,rgb(95,101,175)90%, transparent 10%);
+        margin-top: 10px;
+
+    }
+    .destac_titular {
+        background-color: rgb(93,93,93);
+        background: linear-gradient(30deg, transparent 10%,rgb(93,93,93)10%,rgb(93,93,93)90%, transparent 10%);
+        color: rgb(255,255,255);
+        text-align: center;
+        width: 80%;
+        height: 30px;
+
+    }
+    .contenido_destacado {
+        padding: 5px;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    .destac_img {
+
+    }
+    .img_principal {
+        width: 100%;
+    }
+    .destac_texto {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        text-align: center;
+    }
+    .destac_boton {
+        background-color: rgb(32,226,119);
+        border-radius: 10px;
+        text-align: center;
+        width: 20%;
+        align-self: flex-end;
+    }
+
+    /*2.2.3 Ajustes Panel de Publicidad (a la derecha) dentro de Main*/
+    .panel_publicidades {
+        background-color: rgb(167,216,161);
+        width: 114px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        order: 0;
+        margin-top: 115px;
+        margin-left: -113px;
+    }
+    .publicidad {
+        background-color: rgb(97,214,84);
+        width: 124;
+        height: 100px;
+        background: linear-gradient(30deg, transparent 10%,rgb(97,214,84)10%,rgb(97,214,84)90%, transparent 10%,);
+        margin-top: 10px;
+        
+       /* content: '';
+  position: absolute;
+  width: 50%; height: 50%;
+  bottom: 20px; right: 50%;
+  background: rgba(255, 0, 0, 0.8);
+  transform-Origin: 54% 100%;
+  transform: rotate(-45deg);
+  z-index: -1;*/
+
+    }
+    .pub_titular {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 8px;
+        text-decoration: underline;
+        text-align: center;
+        padding-top: 16px;
+    }
+    .contenido_publicidad {
+        padding: 5px;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    .pub_img {
+
+    }
+    .img_publicidad {
+        width: 100%;
+    }
+    .pub_texto {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 8px;
+        text-align: center;
+
+    }
+    .pub_boton {
+        background-color: rgb(0, 0, 255);
+        border-radius: 5px;
+        color: rgb(255,255,255);
+        text-align: center;
+        width: 60px;
+        height: 20px;
+        font-size: 14px;
+        
+    }
+
+    /*3. Ajustes del Footer*/
+    .pie_de_pagina {
+        background-color: rgb(65,119,57);
+        height: 50px;
+    }
+    .info_desarrolladores{
+        justify-content: center;
+        color: rgb(255,255,255);
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+    }
+
 }
 
-/*1. Ajustes del Header*/
-.encabezado {
-    background-color: rgb(65,119,57);
-    height: 150px;
-    display: flex;      
-}
 
-/*1.1 Contenido del Header*/
 
-.logo_encabezado {
-    padding-left: 10px;
-}
-.titulo_encabezado {
-    padding-left: 15px;
-    padding-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.nombre {
-    font-family: sans-serif;
-    font-size: 45px;
-    font-weight: bold;
-    color: rgb(255,255,255);   
-}
-.redes_sociales {
 
-}
-.img_redes {
+@media screen and (min-width:900px){
 
-}
+    /* Ajustes Generales */
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    /*Ajustes Contenedor General del Body*/
 
-/*2. Ajustes del Main*/
-.contenedor_central {
-    background-color: rgb(255,255,255);
+    .contenedor_general {
+        width: 80%;
+        margin:0 auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
 
-}
+    /*1. Ajustes del Header*/
+    .encabezado {
+        background-color: rgb(65,119,57);
+        height: 150px;
+        display: flex;      
+    }
 
-/*2.1 Ajustes barra de navegación dentro de Main*/
-.navegador {
+    /*1.1 Contenido del Header*/
 
-    background-color: rgb(91,175,80);
-    height: 60px;
-}
+    .logo_encabezado {
+        padding-left: 10px;
+    }
+    .titulo_encabezado {
+        padding-left: 15px;
+        padding-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .nombre {
+        font-family: sans-serif;
+        font-size: 45px;
+        font-weight: bold;
+        color: rgb(255,255,255);   
+    }
+    .redes_sociales {
 
-.nav_menu {
+    }
+    .img_redes {
 
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 10px;
-}
+    }
 
-.boton_nav {
-    background-color: rgb(71,72,152);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    border: none;
-    color: rgb(255,255,255);
-}
-.lupa {
-    background-color: rgb(91,175,80)
-    border-radius: 5px;
-}
+    /*2. Ajustes del Main*/
+    .contenedor_central {
+        background-color: rgb(255,255,255);
 
-/*2.2 Ajustes de la Seccion Informativa dentro de Main*/
-.informador {
-    display: flex;
-}
+    }
 
-/*2.2.1 Ajustes Panel de Noticias (a la izquierda) dentro de Main*/
-.panel_ultima_noticias {
-    background-color: rgb(167,216,161);
-    width: 20%;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    /*2.1 Ajustes barra de navegación dentro de Main*/
+    .navegador {
 
-}
-.ult_noticia {
-    background-color: rgb(255,173,1);
-    border-radius: 15px;
-    width: 185px;
-    height: 100px;
-    padding: 5px;
- 
+        background-color: rgb(91,175,80);
+        height: 60px;
+    }
 
-}
-.ult_titular {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12px;
-    color: rgb(255,255,255);
-    text-decoration: underline;
-    text-align: center;
-}
-.contenido_ult_noticia {
-    padding: 5px;
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-}
-.ult_img {
-    width: 280px;
+    .nav_menu {
 
-}
-.img_noticia {
-    width: 100%;
-    border-radius: 16px;
-}
-.ult_texto {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 10px;
-    text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px;
+    }
 
-}
-/*2.2.2 Ajustes Panel Principal de Noticias (centrada) dentro de Main*/
-.panel_principal {
-    background-color: rgb(255,255,255);
-    width: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 15px;
+    .boton_nav {
+        background-color: rgb(71,72,152);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        color: rgb(255,255,255);
+    }
+    .lupa {
+        background-color: rgb(91,175,80);
+        border-radius: 5px;
+    }
+
+    /*2.2 Ajustes de la Seccion Informativa dentro de Main*/
+    .informador {
+        display: flex;
+    }
+
+    /*2.2.1 Ajustes Panel de Noticias (a la izquierda) dentro de Main*/
+    .panel_ultima_noticias {
+        background-color: rgb(167,216,161);
+        width: 20%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+    .ult_noticia {
+        background-color: rgb(255,173,1);
+        border-radius: 15px;
+        width: 185px;
+        height: 100px;
+        padding: 5px;
     
 
-}
-.destac_noticia {
-    background-color: rgb(95,101,175);
-    width: 270px;
-    height: 180px;
-    background: linear-gradient(30deg, transparent 10%,rgb(95,101,175)10%,rgb(95,101,175)90%, transparent 10%);
-   
+    }
+    .ult_titular {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        color: rgb(255,255,255);
+        text-decoration: underline;
+        text-align: center;
+    }
+    .contenido_ult_noticia {
+        padding: 5px;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    .ult_img {
+        width: 280px;
 
-}
-.destac_titular {
-    background-color: rgb(93,93,93);
-    background: linear-gradient(30deg, transparent 10%,rgb(93,93,93)10%,rgb(93,93,93)90%, transparent 10%);
-    color: rgb(255,255,255);
-    text-align: center;
-    width: 80%;
-    height: 30px;
+    }
+    .img_noticia {
+        width: 100%;
+        border-radius: 16px;
+    }
+    .ult_texto {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 10px;
+        text-align: center;
 
-}
-.contenido_destacado {
-    padding: 5px;
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-}
-.destac_img {
+    }
+    /*2.2.2 Ajustes Panel Principal de Noticias (centrada) dentro de Main*/
+    .panel_principal {
+        background-color: rgb(255,255,255);
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 15px;
+        
 
-}
-.img_principal {
-    width: 100%;
-}
-.destac_texto {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12px;
-    text-align: center;
-}
-.destac_boton {
-    background-color: rgb(32,226,119);
-    border-radius: 10px;
-    text-align: center;
-    width: 20%;
-    align-self: flex-end;
-}
-
-/*2.2.3 Ajustes Panel de Publicidad (a la derecha) dentro de Main*/
-.panel_publicidades {
-    background-color: rgb(167,216,161);
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.publicidad {
-    background-color: rgb(97,214,84);
-    width: 185px;
-    height: 100px;
-    background: linear-gradient(30deg, transparent 10%,rgb(97,214,84)10%,rgb(97,214,84)90%, transparent 10%,);
-
-
-   
-}
-.pub_titular {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 10px;
-    text-decoration: underline;
-    text-align: center;
-
-}
-.contenido_publicidad {
-    padding: 5px;
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-}
-.pub_img {
-
-}
-.img_publicidad {
-    width: 100%;
-}
-.pub_texto {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 10px;
-    text-align: center;
-
-}
-.pub_boton {
-    background-color: rgb(0, 0, 255);
-    border-radius: 5px;
-    color: rgb(255,255,255);
-    text-align: center;
-    width: 30%;
+    }
+    .destac_noticia {
+        background-color: rgb(95,101,175);
+        width: 270px;
+        height: 180px;
+        background: linear-gradient(30deg, transparent 10%,rgb(95,101,175)10%,rgb(95,101,175)90%, transparent 10%);
     
-}
 
-/*3. Ajustes del Footer*/
-.pie_de_pagina {
-    background-color: rgb(65,119,57);
-    height: 50px;
-}
-.info_desarrolladores{
-    justify-content: center;
-    color: rgb(255,255,255);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    line-height: 50px;
-    text-align: center;
+    }
+    .destac_titular {
+        background-color: rgb(93,93,93);
+        background: linear-gradient(30deg, transparent 10%,rgb(93,93,93)10%,rgb(93,93,93)90%, transparent 10%);
+        color: rgb(255,255,255);
+        text-align: center;
+        width: 80%;
+        height: 30px;
+
+    }
+    .contenido_destacado {
+        padding: 5px;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    .destac_img {
+
+    }
+    .img_principal {
+        width: 100%;
+    }
+    .destac_texto {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        text-align: center;
+    }
+    .destac_boton {
+        background-color: rgb(32,226,119);
+        border-radius: 10px;
+        text-align: center;
+        width: 20%;
+        align-self: flex-end;
+    }
+
+    /*2.2.3 Ajustes Panel de Publicidad (a la derecha) dentro de Main*/
+    .panel_publicidades {
+        background-color: rgb(167,216,161);
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .publicidad {
+        background-color: rgb(97,214,84);
+        width: 185px;
+        height: 100px;
+        background: linear-gradient(30deg, transparent 10%,rgb(97,214,84)10%,rgb(97,214,84)90%, transparent 10%,);
+
+
+    
+    }
+    .pub_titular {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 10px;
+        text-decoration: underline;
+        text-align: center;
+
+    }
+    .contenido_publicidad {
+        padding: 5px;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    .pub_img {
+
+    }
+    .img_publicidad {
+        width: 100%;
+    }
+    .pub_texto {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 10px;
+        text-align: center;
+
+    }
+    .pub_boton {
+        background-color: rgb(0, 0, 255);
+        border-radius: 5px;
+        color: rgb(255,255,255);
+        text-align: center;
+        width: 30%;
+        
+    }
+
+    /*3. Ajustes del Footer*/
+    .pie_de_pagina {
+        background-color: rgb(65,119,57);
+        height: 50px;
+    }
+    .info_desarrolladores{
+        justify-content: center;
+        color: rgb(255,255,255);
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+    }
 }
 
