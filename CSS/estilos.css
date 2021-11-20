@@ -17,7 +17,7 @@
 
 /*1. Ajustes del Header*/
 .encabezado {
-    background-color: rgb(25,47,22);
+    background-color: rgb(65,119,57);
     height: 150px;
     display: flex;      
 }
@@ -36,25 +36,27 @@
 }
 .nombre {
     font-family: sans-serif;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: bold;
     color: rgb(255,255,255);   
 }
 .redes_sociales {
 
 }
+.img_redes {
+
+}
 
 /*2. Ajustes del Main*/
 .contenedor_central {
     background-color: rgb(255,255,255);
-    
 
 }
 
 /*2.1 Ajustes barra de navegación dentro de Main*/
 .navegador {
 
-    background-color: rgb(35,68,31);
+    background-color: rgb(91,175,80);
     height: 60px;
 }
 
@@ -67,12 +69,16 @@
 }
 
 .boton_nav {
-    background-color: rgb(28,28,59);
+    background-color: rgb(71,72,152);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     font-weight: bold;
     border: none;
     color: rgb(255,255,255);
+}
+.lupa {
+    background-color: rgb(91,175,80)
+    border-radius: 5px;
 }
 
 /*2.2 Ajustes de la Seccion Informativa dentro de Main*/
@@ -82,33 +88,48 @@
 
 /*2.2.1 Ajustes Panel de Noticias (a la izquierda) dentro de Main*/
 .panel_ultima_noticias {
-    background-color: rgb(65, 85, 63);
+    background-color: rgb(167,216,161);
     width: 20%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 
 }
 .ult_noticia {
-    background-color: rgb(204, 153, 0);
+    background-color: rgb(255,173,1);
     border-radius: 15px;
-    box-sizing: border-box;
     width: 185px;
+    height: 100px;
+    padding: 5px;
+ 
+
 }
 .ult_titular {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 12px;
     color: rgb(255,255,255);
     text-decoration: underline;
     text-align: center;
 }
 .contenido_ult_noticia {
+    padding: 5px;
     display: flex;
+    justify-content:space-evenly;
+    align-items: center;
 }
 .ult_img {
+    width: 280px;
 
+}
+.img_noticia {
+    width: 100%;
+    border-radius: 16px;
 }
 .ult_texto {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10px;
+    text-align: center;
 
 }
 /*2.2.2 Ajustes Panel Principal de Noticias (centrada) dentro de Main*/
@@ -117,89 +138,117 @@
     width: 60%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    
 
 }
 .destac_noticia {
-    background-color: rgb(107, 67, 37);
-    width: 280px;
-    height: 280px;
-    background: linear-gradient(30deg,rgb(107, 67, 37)90%, transparent 10%,rgb(107, 67, 37)90%, transparent 10%);
+    background-color: rgb(95,101,175);
+    width: 270px;
+    height: 180px;
+    background: linear-gradient(30deg, transparent 10%,rgb(95,101,175)10%,rgb(95,101,175)90%, transparent 10%);
+   
 
 }
 .destac_titular {
-    font-weight: bold;
+    background-color: rgb(93,93,93);
+    background: linear-gradient(30deg, transparent 10%,rgb(93,93,93)10%,rgb(93,93,93)90%, transparent 10%);
     color: rgb(255,255,255);
     text-align: center;
+    width: 80%;
+    height: 30px;
 
 }
 .contenido_destacado {
+    padding: 5px;
     display: flex;
+    justify-content:space-evenly;
+    align-items: center;
 }
 .destac_img {
 
 }
+.img_principal {
+    width: 100%;
+}
 .destac_texto {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
+    text-align: center;
 }
 .destac_boton {
-    background-color: rgb(0, 255, 255);
-    border-radius: 3px;
-    font-weight: bold;
+    background-color: rgb(32,226,119);
+    border-radius: 10px;
     text-align: center;
-
+    width: 20%;
+    align-self: flex-end;
 }
 
 /*2.2.3 Ajustes Panel de Publicidad (a la derecha) dentro de Main*/
 .panel_publicidades {
-    background-color: rgb(65, 85, 63);
+    background-color: rgb(167,216,161);
     width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .publicidad {
-    background-color: rgb(0, 130, 37);
+    background-color: rgb(97,214,84);
     width: 185px;
-    height: 185px;
-    background: linear-gradient(30deg,rgb(0, 130, 37)90%, transparent 10%,rgb(0, 130, 37)90%, transparent 10%);
+    height: 100px;
+    background: linear-gradient(30deg, transparent 10%,rgb(97,214,84)10%,rgb(97,214,84)90%, transparent 10%,);
 
+
+   
 }
 .pub_titular {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 10px;
     text-decoration: underline;
     text-align: center;
 
 }
 .contenido_publicidad {
+    padding: 5px;
     display: flex;
+    justify-content:space-evenly;
+    align-items: center;
 }
 .pub_img {
 
 }
+.img_publicidad {
+    width: 100%;
+}
 .pub_texto {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10px;
+    text-align: center;
 
 }
 .pub_boton {
     background-color: rgb(0, 0, 255);
-    border-radius: 3px;
+    border-radius: 5px;
     color: rgb(255,255,255);
-    font-weight: bold;
     text-align: center;
+    width: 30%;
     
 }
 
 /*3. Ajustes del Footer*/
 .pie_de_pagina {
-    background-color: rgb(25,47,22);
+    background-color: rgb(65,119,57);
     height: 50px;
 }
 .info_desarrolladores{
     justify-content: center;
     color: rgb(255,255,255);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 50px;
     text-align: center;
 }
+
