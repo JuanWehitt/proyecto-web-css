@@ -109,7 +109,7 @@
         border-radius: 15px;
         box-sizing: border-box;
         width: 120px;
-        height: 85px;
+        height: 85px;        
     }
     .ult_titular {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -209,16 +209,8 @@
         height: 100px;
         background: linear-gradient(30deg, transparent 10%,rgb(97,214,84)10%,rgb(97,214,84)90%, transparent 10%,);
         margin-top: 10px;
-        
-       /* content: '';
-  position: absolute;
-  width: 50%; height: 50%;
-  bottom: 20px; right: 50%;
-  background: rgba(255, 0, 0, 0.8);
-  transform-Origin: 54% 100%;
-  transform: rotate(-45deg);
-  z-index: -1;*/
-
+        clip-path: polygon(20% 0, 80% 0, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0 80%, 0 20%);
+      
     }
     .pub_titular {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -477,9 +469,9 @@
     .publicidad {
         background-color: rgb(97,214,84);
         width: 185px;
-        height: 100px;
-        background: linear-gradient(30deg, transparent 10%,rgb(97,214,84)10%,rgb(97,214,84)90%, transparent 10%,);
-
+        height: 110px;
+        
+        clip-path: polygon(20% 0, 80% 0, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0 80%, 0 20%);
 
     
     }
@@ -513,7 +505,7 @@
         border-radius: 5px;
         color: rgb(255,255,255);
         text-align: center;
-        width: 30%;
+        
         
     }
 
